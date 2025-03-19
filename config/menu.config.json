@@ -1,0 +1,16 @@
+[
+    {
+        "Validation": [
+            {
+                "title": "Validation API",
+                "href": "/validation/api",
+                "description": "Validate your api projet"
+            },
+            {
+                "title": "Validation Base de Donnée",
+                "href": "/validation/db",
+                "description": "Validate your db projet"
+            }
+        ]
+    }
+]
