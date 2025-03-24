@@ -1,5 +1,4 @@
 import * as React from "react"
-import Link from "next/link"
 import { cn } from "@/lib/utils"
 import {
         NavigationMenu,
@@ -8,7 +7,6 @@ import {
         NavigationMenuLink,
         NavigationMenuList,
         NavigationMenuTrigger,
-        navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import menu from "@/config/menu.config.json"
 
