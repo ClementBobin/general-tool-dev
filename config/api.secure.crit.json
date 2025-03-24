@@ -1,373 +1,342 @@
 [
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "GBP-01",
         "title": "Inventaire",
         "measure": "L'inventaire est créé selon les conditions demandées",
         "verification_tool": "NA",
         "examples": ["https://www.postman.com/", "https://www.getpostman.com/"],
         "caractere": "Obligatoire",
-        "description": "Gérer un inventaire contenant les informations suivantes:\n\nNom de l'API : Identifier clairement chaque API en fournissant un nom descriptif qui reflète son objectif ou sa fonctionnalité.\n\nDescription de l'API : Fournir une brève présentation ou un résumé de l'API, y compris son utilisation prévue, ses caractéristiques et ses avantages.\n\nVersion de l'API : Indiquer le numéro de version de l'API. Cette information est particulièrement importante si vous disposez de plusieurs versions de la même API, afin de suivre les modifications et d'assurer la compatibilité.\n\nPoint de terminaison de l'API : Indiquer l'URL ou l'emplacement du réseau où l'on peut accéder à l'API.\n\nDocumentation de l'API : Fournir des liens ou des références à la documentation de l'API, qui doit contenir des informations détaillées sur les points de terminaison de l'API, les paramètres, les formats de demande/réponse, les mécanismes d'authentification et les exemples d'utilisation.\n\nPropriétaire ou équipe de l'API : Identifier la personne ou l'équipe responsable de la maintenance et du support de l'API. Cela permet d'établir la responsabilité et de faciliter la communication en cas de questions ou de problèmes liés à l'API.\n\nDépendances de l'API : Documenter toutes les dépendances sur lesquelles l'API s'appuie, telles que d'autres API, des bases de données ou des services externes. Ces informations sont cruciales pour comprendre les impacts potentiels lors de modifications ou de mises à jour."
+        "description": "Gérer un inventaire contenant les informations suivantes...",
+        "level": 85
     },
     {
-        "tags": [
-            "API"
-        ],  
+        "tags": ["API"],
         "ref": "GPB-02",
         "title": "Audit",
         "measure": "Les API sont auditées régulièrement pour vérifier leur conformité avec ce standard.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "description": "Toutes les API doivent faire l'objet d'un audit regulier.\n\nLes audits d'API sont essentiels pour maintenir la securite, les performances et la conformite de votre infrastructure d'API. En identifiant et en traitant de"
+        "description": "Les audits d'API sont essentiels pour maintenir la securite, les performances et la conformite de votre infrastructure d'API.",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-G-1",
         "title": "Nom de domaine",
         "measure": "Le nom de domaine apposé sur le certificat est le même que celui utilisé par le site source.",
         "verification_tool": "https://ssltools.godaddy.com/views/certChecker",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Toutes les API doivent faire l'objet d'un audit regulier.\n\nLes audits d'API sont essentiels pour maintenir la securite, les performances et la conformite de votre infrastructure d'API. En identifiant et en traitant de"
+        "description": "Toutes les API doivent faire l'objet d'un audit regulier.",
+        "level": 70
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-G-2",
         "title": "Réputation de l’autorité de certification",
         "measure": "Le scan CrawlCenter n'a pas permis d'identifier de Mixed-Content HTTP/HTTPS.",
         "verification_tool": "https://www.crawlcenter.com/mixed-content-checker",
         "caractere": "Recommandé",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 60
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-G-3",
         "title": "Date de validité du certificat",
         "measure": "Le certificat présenté par le site source est valide.",
         "verification_tool": "https://ssltools.godaddy.com/views/certChecker",
         "caractere": "Recommandé",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 65
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-G-4",
         "title": "Contenus HTTP/S",
         "measure": "Le scan CrawlCenter n'a pas permis d'identifier de Mixed-Content HTTP/HTTPS.",
         "verification_tool": "https://www.crawlcenter.com/mixed-content-checker",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 80
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-A-1",
         "title": "Authentification des utilisateurs",
         "measure": "Les méthodes d'authentification doivent être conformes.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "L'acces a l'API doit etre limite aux utilisateurs authentifies par 0Auth2 fournissant un compte de domaine enregistre dans l'environnement de l'entreprise, ou Client_id & Client_Secret, ou le mecanisme Basic Auth."
+        "description": "L'acces a l'API doit etre limite aux utilisateurs authentifies par 0Auth2.",
+        "level": 95
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-A-2",
         "title": "Authentification des machines",
         "measure": "Les méthodes d'authentification doivent être conformes.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Les machines et les connecteurs qui demandent les endpoints de l'API doivent presenter des jetons d'authentification valides bases sur 0Auth2 ou Client_id & Client_Secret, ou Basic Auth."
+        "description": "Les machines et les connecteurs doivent présenter des jetons d'authentification valides.",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-A-3",
         "title": "Blocage / Jail",
-        "measure": "Le seuil maximum de tentatives d'authentification devrait être fixé à 10 itérations et les comptes devraient être mis en blocage s'ils dépassent le nombre maximum de tentatives.",
+        "measure": "Le seuil maximum de tentatives d'authentification devrait être fixé à 10 itérations.",
         "verification_tool": "NA",
         "caractere": "Recommandé",
         "resultat": "CONFORME",
-        "description": "Le seuil maximum de tentatives d'authentification devrait etre fixe a 10 iterations et les comptes devraient etre mis en blocage s'ils depassent le nombre maximum de tentatives."
+        "description": "Le seuil maximum de tentatives d'authentification devrait etre fixe a 10 iterations.",
+        "level": 50
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-1",
         "title": "Validation Back-End",
-        "measure": "Chaque demande d’accès doit être vérifiée pour attester de l'authentification dans un sous-programme dédié. Le jeton d'authentification doit être vérifié pour RBAC.",
+        "measure": "Chaque demande d’accès doit être vérifiée pour attester de l'authentification dans un sous-programme dédié.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Chaque demande d'acces doit etre verifiee pour attester de l'authentification dans un sous-programme dedie. Le jeton d'authentification doit etre verifie pour RBAC."
+        "description": "Chaque demande d'accès doit être vérifiée pour attester de l'authentification.",
+        "level": 85
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-2",
         "title": "Role-Based-Access-Control (RBAC)",
         "measure": "Appliquer les configurations demandées pour sécuriser les interactions avec les données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Mettre en reuvre un systeme de controle d'acces base sur le role de l'utilisateur pour gerer les autorisations d'acces aux ressources."
+        "description": "Mettre en œuvre un système de contrôle d'accès basé sur le rôle.",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-3",
         "title": "Méthodes HTTP",
-        "measure": "Dans la mesure du possible, le mappage de l'autorisation des méthodes HTTP doit être défini pour toutes les applications et tous les points de terminaison de l'API.",
+        "measure": "Le mappage de l'autorisation des méthodes HTTP doit être défini pour toutes les applications.",
         "docs": "https://escape.tech/",
         "caractere": "Recommandé",
         "resultat": "CONFORME",
-        "description": "Le mappage de l'autorisation des methodes HTTP doit etre defini pour toutes les applications et tous les points de terminaison de l'API."
+        "description": "Le mappage de l'autorisation des méthodes HTTP doit être défini.",
+        "level": 60
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-4",
         "title": "Données sensible",
-        "measure": "Les données sensibles doivent être transférées dans le corps des requêtes PUT ou POST, et dans les en-têtes http pour les requêtes GET.",
+        "measure": "Les données sensibles doivent être transférées dans le corps des requêtes PUT ou POST.",
         "verification_tool": "Dev. Tools.",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Les donnees sensibles doivent etre transferees dans le corps des requetes PUT ou POST, et dans les en-tetes http pour les requetes GET."
+        "description": "Les données sensibles doivent être transférées dans les requêtes PUT ou POST.",
+        "level": 80
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-5",
         "title": "Durcissement SSL / TLS",
         "measure": "La configuration SSL/TLS doit être sécurisée selon les exigences.",
         "verification_tool": "SSLYZE, SSLSCAN",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Renforcer la configuration TLS en appliquant les parametres suivants: Utiliser des suites de chiffrement fortes telles que ECDHE pour l'echange de cles."
+        "description": "Renforcer la configuration TLS en appliquant les paramètres suivants: ECDHE pour l'échange de clés.",
+        "level": 95
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-6",
         "title": "Mode DEBUG",
         "measure": "Le mode DEBUG ne doit pas être activé.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Le mode DEBUG ne doit pas etre active car ii peut exposer des informations sensibles sur !'application, sa structure interne et potentiellement meme les donnees de l'utilisateur."
+        "description": "Le mode DEBUG ne doit pas être activé car il peut exposer des informations sensibles.",
+        "level": 85
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-7",
         "title": "Exposition de l'API",
-        "measure": "Ne pas exposer l'API sur l'internet. Restreindre l'accès aux points d'extrémité au moyen de règles de pare-feu ou d'ACL (par exemple, filtrage IP).",
+        "measure": "Ne pas exposer l'API sur l'internet.",
         "verification_tool": "https://www.shodan.io/",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-8",
         "title": "Cryptographie",
-        "measure": "Tous les secrets et toutes les données sensibles doivent être cryptés à l'aide d'algorithmes cryptographiques de sécurité",
+        "measure": "Tous les secrets et toutes les données sensibles doivent être cryptés.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 95
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-9",
         "title": "Récovation",
-        "measure": "Tous les secrets et accès doivent pouvoir être révoqués par l'administrateur de l'application.",
+        "measure": "Tous les secrets et accès doivent pouvoir être révoqués par l'administrateur.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 85
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-R-10",
         "title": "Identifiants",
-        "measure": "Évitez d'utiliser les identifiants des ressources de l'utilisateur",
+        "measure": "Évitez d'utiliser les identifiants des ressources de l'utilisateur.",
         "docs": ["https:/postman.com/", "https://scalar.com/#api-client"],
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 70
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "J-T-1",
         "title": "Vérification basée sur les signatures",
-        "measure": "Vérifier l'intégrité du JWT au moyen d'une signature. Ne pas autoriser {\"alg\" : \"none\"}, mais utiliser un algorithme fort, par exemple {'alg':'RS256'}.",
+        "measure": "Vérifier l'intégrité du JWT au moyen d'une signature.",
         "verification_tool": "https://github.com/ticarpi/jwt_tool",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "J-T-2",
         "title": "JWT Secret",
         "measure": "Le secret utilisé pour la signature du JWT doit présenter les caractéristiques demandées.",
         "verification_tool": "https://github.com/ticarpi/jwt_tool",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "J-T-3",
         "title": "Données sensibles",
         "measure": "Ne pas inclure d'informations sensibles dans le JWT.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": ""
+        "description": "",
+        "level": 95
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-O-1",
         "title": "Protection contre les attaques Open Redirect",
         "measure": "Lorsque la politique OAuth est disponible, activez toujours la redirection d'uri côté serveur (redirect_uri) pour n'accéder qu'aux URL autorisées.",
         "docs": "https://sec.okta.com/articles/2021/02/stealing-oauth-tokens-open-redirects",
         "caractere": "Recommandé",
         "resultat": "CONFORME",
-        "description": "Une attaque par redirection ouverte se produit lorsqu'une application vulnerable redirige les utilisateurs vers une URL externe specifiee dans le parametre redirect_uri sans la valider ou !'analyser correctement."
+        "description": "Une attaque par redirection ouverte se produit lorsqu'une application vulnerable redirige les utilisateurs vers une URL externe specifiee dans le parametre redirect_uri sans la valider ou l'analyser correctement.",
+        "level": 75
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-O-2",
         "title": "Protection Implicit Flow",
         "measure": "Utilisez toujours l'échange de code au lieu des jetons (n'autorisez pas response_type=token).",
         "docs": "https://blog.postman.com/pkce-oauth-how-to/",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Le flux implicite est l'un des flux d'autorisation Oauth 2.0 qui permet a l'application cliente d'obtenir un jeton d'acces directement aupres du serveur d'autorisation."
+        "description": "Le flux implicite est l'un des flux d'autorisation Oauth 2.0 qui permet à l'application cliente d'obtenir un jeton d'acces directement auprès du serveur d'autorisation.",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-O-3",
         "title": "Protection contre CSRF sur Oauth",
         "measure": "L'utilisation du paramètre d'état avec un hachage aléatoire permet d'éviter les attaques CSRF lors du processus d'authentification Oauth.",
         "docs": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/01-Testing_for_Session_Management_Schema",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "L'utilisation du parametre d'etat avec un hachage aleatoire permet d'eviter les attaques CSRF lors du processus d'authentification Oauth."
+        "description": "L'utilisation du paramètre d'état avec un hachage aléatoire permet d'éviter les attaques CSRF lors du processus d'authentification Oauth.",
+        "level": 95
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-P-1",
         "title": "Protection contre DDoS / Bruteforce",
         "measure": "Limiter le nombre de demandes (limitation de la bande passante) pour éviter les dénis de service et les attaques par force brute.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Limiter le nombre de demandes (limitation de la bande passante) pour eviter les denis de service et les attaques par force brute."
+        "description": "Limiter le nombre de demandes (limitation de la bande passante) pour éviter les dénis de service et les attaques par force brute.",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-I-1",
         "title": "Validation entrées utilisateurs",
         "measure": "Les entrées utilisateurs respectent les exigences.",
         "docs": "https://owasp.org/www-community/Fuzzing",
         "caractere": "Recommandé",
         "resultat": "CONFORME",
-        "description": "Valider le type de contenu des donnees affichees avec ceux acceptes (par exemple application/x-www-form-urlencoded, multipart/form­ data, application/json, etc...)."
+        "description": "Valider le type de contenu des données affichées avec ceux acceptés (par exemple application/x-www-form-urlencoded, multipart/form-data, application/json, etc...).",
+        "level": 70
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-I-2",
         "title": "Protection contre les attaques basées sur XML",
         "measure": "Les fichiers XML sont correctement traités.",
         "docs": "https://portswigger.net/web-security/xxe",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Lorsque vous traitez des fichiers XML, assurez-vous que !'analyse des entites n'est pas activee par defaut afin d'eviter les vulnerabilites XXE (XML external entity attack)."
+        "description": "Lorsque vous traitez des fichiers XML, assurez-vous que l'analyse des entités n'est pas activée par défaut afin d'éviter les vulnérabilités XXE (XML external entity attack).",
+        "level": 85
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-I-3",
         "title": "Configuration entêtes de réponse",
-        "measure": "Les entêtes demandés sont positonnés",
+        "measure": "Les entêtes demandés sont positionnés.",
         "verification_tool": "Dev. Tools.",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Les en-tetes suivants doivent etre configures: X-CONTENT-TYPE-OPTIONS: nosniff, X-FRAME-OPTIONS: Deny, CSP: default-src 'none' (aucun)."
+        "description": "Les en-têtes suivants doivent être configurés: X-CONTENT-TYPE-OPTIONS: nosniff, X-FRAME-OPTIONS: Deny, CSP: default-src 'none' (aucun).",
+        "level": 90
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "C-V-1",
         "title": "CORS",
         "measure": "Désactiver les en-têtes CORS si les appels inter-domaines ne sont pas pris en charge et bien spécifier les \"origines\" et \"inter-domaines\" des appels.",
         "verification_tool": "curl -v --request OPTIONS 'https://your-host.here' -H 'Origin: http://some.origin.here' -H 'Access-Control-Request-Method: GET'",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Desactiver les en-tetes CORS si les appels inter-domaines ne sont pas pris en charge et bien specifier les \"origines\" et \"inter-domaines\" des appels."
+        "description": "Désactiver les en-têtes CORS si les appels inter-domaines ne sont pas pris en charge et bien spécifier les \"origines\" et \"inter-domaines\" des appels.",
+        "level": 85
     },
     {
-        "tags": [
-            "API"
-        ],
+        "tags": ["API"],
         "ref": "A-L-2",
         "title": "Journalisation",
         "measure": "Les évènements indiqués sont enregistrés, les caractéristiques demandées sont enregistrées pour les évènements concernés.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
         "resultat": "CONFORME",
-        "description": "Les evenements suivants doivent toujours etre enregistres: Evenements lies a la securite (authentification, echec, ...), Validation du jeton, Echec de la validation des entrees (en cas d'injection)."
+        "description": "Les événements suivants doivent toujours être enregistrés: Événements liés à la sécurité (authentification, échec, ...), Validation du jeton, Échec de la validation des entrées (en cas d'injection).",
+        "level": 85
     }
 ]

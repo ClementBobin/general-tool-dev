@@ -9,7 +9,8 @@
         "description": "Assurer que seuls les utilisateurs autorisés peuvent accéder aux bases de données. Utiliser des rôles et des permissions pour gérer les accès.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 100
     },
     {
         "tags": [
@@ -21,7 +22,8 @@
         "description": "Utiliser des algorithmes de chiffrement robustes pour protéger les données sensibles au repos.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 100
     },
     {
         "tags": [
@@ -33,7 +35,8 @@
         "description": "Maintenir un journal des accès pour permettre la traçabilité et l'audit des activités.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 95
     },
     {
         "tags": [
@@ -45,7 +48,8 @@
         "description": "Maintenir la base de données à jour avec les derniers correctifs de sécurité pour éviter les vulnérabilités.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 90
     },
     {
         "tags": [
@@ -57,7 +61,8 @@
         "description": "Assurer des sauvegardes fréquentes et sécurisées pour permettre la récupération en cas de perte de données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 95
     },
     {
         "tags": [
@@ -69,7 +74,8 @@
         "description": "Mettre en place des méthodes d'authentification robustes, telles que l'authentification à deux facteurs.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 100
     },
     {
         "tags": [
@@ -81,7 +87,8 @@
         "description": "Exiger des mots de passe complexes et leur rotation régulière pour les comptes d'accès à la base de données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 90
     },
     {
         "tags": [
@@ -93,7 +100,8 @@
         "description": "Appliquer le principe du moindre privilège pour minimiser les risques d'accès non autorisés.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 90
     },
     {
         "tags": [
@@ -105,7 +113,8 @@
         "description": "Valider et assainir toutes les entrées utilisateur pour éviter les injections SQL.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 100
     },
     {
         "tags": [
@@ -117,7 +126,8 @@
         "description": "Utiliser des outils de surveillance pour détecter les activités suspectes ou anormales.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 85
     },
     {
         "tags": [
@@ -129,7 +139,8 @@
         "description": "Séparer physiquement ou logiquement les environnements pour éviter les interférences et les risques de sécurité.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 90
     },
     {
         "tags": [
@@ -141,7 +152,8 @@
         "description": "Appliquer des configurations sécurisées pour minimiser les vulnérabilités.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 85
     },
     {
         "tags": [
@@ -153,7 +165,8 @@
         "description": "Mettre en place un processus de gestion des vulnérabilités pour maintenir la sécurité de la base de données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 95
     },
     {
         "tags": [
@@ -165,7 +178,8 @@
         "description": "Utiliser des protocoles sécurisés comme TLS pour protéger les données en transit.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 90
     },
     {
         "tags": [
@@ -177,7 +191,8 @@
         "description": "Utiliser des systèmes de gestion des clés pour assurer la sécurité des clés de chiffrement.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 85
     },
     {
         "tags": [
@@ -189,7 +204,8 @@
         "description": "Vérifier régulièrement les journaux d'accès pour détecter les activités suspectes.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 80
     },
     {
         "tags": [
@@ -201,7 +217,8 @@
         "description": "Utiliser des pare-feu et des systèmes de détection d'intrusion pour prévenir les attaques DDoS.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 80
     },
     {
         "tags": [
@@ -213,7 +230,8 @@
         "description": "Avoir un processus défini pour répondre aux incidents de sécurité liés à la base de données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 90
     },
     {
         "tags": [
@@ -225,7 +243,8 @@
         "description": "Sensibiliser les utilisateurs aux risques de sécurité et aux bonnes pratiques pour protéger la base de données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 70
     },
     {
         "tags": [
@@ -237,7 +256,8 @@
         "description": "Assurer que seuls les personnes autorisées ont un accès physique aux serveurs hébergeant la base de données.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 75
     },
     {
         "tags": [
@@ -249,7 +269,8 @@
         "description": "Surveiller les activités des utilisateurs internes pour détecter les comportements suspects.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 80
     },
     {
         "tags": [
@@ -261,7 +282,8 @@
         "description": "Documenter et appliquer des configurations standardisées pour éviter les erreurs de configuration.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 80
     },
     {
         "tags": [
@@ -273,6 +295,7 @@
         "description": "Limiter le nombre de tentatives de connexion et bloquer les comptes après plusieurs échecs.",
         "verification_tool": "NA",
         "caractere": "Obligatoire",
-        "resultat": "CONFORME"
+        "resultat": "CONFORME",
+        "level": 85
     }
 ]
