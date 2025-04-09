@@ -1,5 +1,5 @@
 // Animation variant for simple text animation
-export const textVariant = (delay) => {
+export const textVariant = (delay: number) => {
     return {
       hidden: {
         y: -50,
@@ -19,7 +19,7 @@ export const textVariant = (delay) => {
   
   // frammer-motion custom animation
   // Generic fade-in animation
-  export const fadeIn = (direction, type, delay, duration) => {
+  export const fadeIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, delay: number, duration: number) => {
     return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -41,7 +41,7 @@ export const textVariant = (delay) => {
   };
   
   // Zoom-in animation
-  export const zoomIn = (delay, duration) => {
+  export const zoomIn = (delay: number, duration: number) => {
     return {
       hidden: {
         scale: 0,
@@ -61,7 +61,7 @@ export const textVariant = (delay) => {
   };
   
   // Slide-in animation general
-  export const slideIn = (direction, type, delay, duration) => {
+  export const slideIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, delay: number, duration: number) => {
     return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -81,7 +81,7 @@ export const textVariant = (delay) => {
   };
   
   // Staggered container animation
-  export const staggerContainer = (staggerChildren, delayChildren) => {
+  export const staggerContainer = (staggerChildren: number, delayChildren: number) => {
     return {
       hidden: {},
       show: {
@@ -94,7 +94,7 @@ export const textVariant = (delay) => {
   };
 
   // Slide-in animation from corner 
-export const slideInFromCorner = (delay = 0, duration = 0.5, initX = 100, initY = -100, x = 0, y = 0, opacity = 1) => {
+export const slideInFromCorner = (delay: number = 0, duration: number = 0.5, initX: number = 100, initY: number = -100, x: number = 0, y: number = 0, opacity: number = 1) => {
     return {
         hidden: { x: initX, y: initY, opacity: 0 },
         show: {
@@ -110,7 +110,7 @@ export const slideInFromCorner = (delay = 0, duration = 0.5, initX = 100, initY 
 };
 
 // Slide-in animation from side
-export const slideInFromSide = (direction = 'right', delay = 0, duration = 0.5, x = 0, y = 0, initPos = 100, opacity = 1) => {
+export const slideInFromSide = (direction: 'left' | 'right' | 'up' | 'down' = 'right', delay: number = 0, duration: number = 0.5, x: number = 0, y: number = 0, initPos: number = 100, opacity: number = 1) => {
     return {
         hidden: { x: direction === 'left' ? initPos : direction === 'right' ? -initPos : 0, y: direction === 'up' ? initPos : direction === 'down' ? -initPos : 0, opacity: 0 },
         show: {
@@ -126,7 +126,7 @@ export const slideInFromSide = (direction = 'right', delay = 0, duration = 0.5, 
 }
 
 // drop from top and bounce multiple times at the bottom animation
-export const dropAndBounce = (delay = 0, duration = 1.5, initX = 0, initY = 1000, x = 0, y = 0, opacity = 1) => {
+export const dropAndBounce = (delay: number = 0, duration: number = 1.5, initX: number = 0, initY: number = 1000, x: number = 0, y: number = 0, opacity: number = 1) => {
     return {
         hidden: { y: -initY, x: initX, opacity: 0 },
         show: {
@@ -145,7 +145,7 @@ export const dropAndBounce = (delay = 0, duration = 1.5, initX = 0, initY = 1000
 }
 
 // float based on it original position animation
-export const float = (delay = 0, duration = 1.5, initX = 0, initY = 0, x = 0, y = 0, opacity = 1) => {
+export const float = (delay: number = 0, duration: number = 1.5, initX: number = 0, initY: number = 0, x: number = 0, y: number = 0, opacity: number = 1) => {
     return {
         hidden: { y: initY, x: initX, opacity: 0 },
         show: {

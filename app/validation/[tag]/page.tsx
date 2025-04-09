@@ -94,6 +94,7 @@ function Page({
         }))
       });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [criteria]);
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
