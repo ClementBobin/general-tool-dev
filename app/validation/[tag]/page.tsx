@@ -31,7 +31,7 @@ const formSchema = z.object({
       z.object({
         id: z.string(),
         name: z.string(),
-        value: z.string().optional(),
+        value: z.string()
       })
   ),
 });
@@ -47,10 +47,11 @@ function Page({
     ref: string;
     title: string;
     measure: string;
-    verification_tool: string;
+    verification_tool?: string;
     caractere: string;
     resultat: string;
     level: number;
+    description: string;
   }[]>([]);
 
   const [totalScore, setTotalScore] = useState(0);
@@ -75,15 +76,27 @@ function Page({
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      criteria: [],
+      criteria: criteria.map(item => ({
+        id: item.ref,
+        name: item.title,
+        value: ''
+      }))
     },
   });
 
   useEffect(() => {
-    form.reset({ criteria });
+    if (criteria.length > 0) {
+      form.reset({ 
+        criteria: criteria.map(item => ({
+          id: item.ref,
+          name: item.title,
+          value: ''
+        }))
+      });
+    }
   }, [criteria]);
 
-  const onSubmit = (values) => {
+  const onSubmit = (values: z.infer<typeof formSchema>) => {
     console.log("Form submitted:", values);
 
     // Calculate the score
