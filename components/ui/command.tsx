@@ -13,21 +13,20 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 
-function Command({
-  className,
-  ...props
-}: React.ComponentProps<typeof CommandPrimitive>) {
-  return (
-    <CommandPrimitive
-      data-slot="command"
-      className={cn(
-        "bg-popover text-popover-foreground flex h-full w-full flex-col overflow-hidden rounded-md",
-        className
-      )}
-      {...props}
-    />
-  )
-}
+const Command = React.forwardRef<
+  React.ElementRef<typeof CommandPrimitive>,
+  React.ComponentPropsWithoutRef<typeof CommandPrimitive>
+>(({ className, ...props }, ref) => (
+  <CommandPrimitive
+    ref={ref}
+    className={cn(
+      "flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground",
+      className
+    )}
+    {...props}
+  />
+))
+Command.displayName = CommandPrimitive.displayName
 
 function CommandDialog({
   title = "Command Palette",
@@ -37,6 +36,7 @@ function CommandDialog({
 }: React.ComponentProps<typeof Dialog> & {
   title?: string
   description?: string
+  children: React.ComponentProps<typeof Command>["children"]
 }) {
   return (
     <Dialog {...props}>
